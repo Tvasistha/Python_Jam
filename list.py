@@ -1,29 +1,42 @@
-#List : It is a built in data type. Ordered collection. 
-#Mutuable (Value can be changed)
-#List is ordered collection of elements enclosed within []
+#list used to store multiple items in single variable. 
 
-l1 = [1,True,"Toshi","Prashant"]
-print(l1)
+food = ["pizza", "ladoo" , "cheesecake" , "papaya"]
+print(food[1])
+print(food[0])
 
-#replacing the data in index2.
-l1[1] = "c"
-print(l1)
+food[0] = "muskmellon"
 
-#adding element to the new index position.
+print(food[0])
 
-l1.append("Vasistha")
-print(l1)
+for i in food:
+    print(i)
 
 
-#adding list inside the list
+#append: to add an element.
 
-l1.append([1,2,3,4,5,6,10])
-print(l1)
+food.append("lemon")
+print(food)
 
-#to remove the last element we use pop.
+#remove: to remove an element.
 
-l1.pop()
-print(l1)
+food.remove("muskmellon")
+print(food)
 
-l1.pop(1)
-print(l1)
+#pop will remove the last elemet.
+
+food.pop()
+print(food)
+
+#insert an element at a specific index position
+
+food.insert(0,"cake")
+print(food)
+
+#sort: sort the list automatically.
+
+food.sort()
+print(food)
+
+#clear: this will clear every single element.
+food.clear()
+print(food)
