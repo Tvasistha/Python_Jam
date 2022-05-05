@@ -1,23 +1,22 @@
-#set is an unordered and unindexed collection of elements enclosed within {}
-# duplicates are not allowed in set.
-#unindexed means sets doesn't have an index attached to it, we can't access it's elememts or add elements using index. 
+#set: a collection which is unoredered & unindexed . no duplicate values.
 
 
+utensils = {"fork","spoon","mugs"}
+dishes = {"bowl","plate","cup","fork"}
 
-s1 = {1,2,"Toshi","Prashant"}
-print(s1)
+#utensils.add("napkin")
+#utensils.remove("fork")
+#utensils.clear()
+
+#utensils.update(dishes)
+#print(dishes)
+
+#dinner_table = utensils.union(dishes)
 
 
-s1 = {1,1,1,"Toshi","zjhdadhgf", "Toshi"}
-print(s1)
+#for x in dinner_table:
+   # print(x)
 
-#add new element.
-
-s1.add("Prashant")
-print(s1)
-
-#if we want to add multiple elements we use update.
-
-s1.update([1,2,2,4,"True","False","vasistha",1907,1111])
-print(s1)
-
+#print(utensils.difference(dishes))
+print(dishes.difference(utensils))
+print(utensils.intersection(dishes))

@@ -1,15 +1,19 @@
-#Dictionary is unordered collection of key-value pair enclosed within {}.
-#Dictionary is mutuable.
+#dicitionary: A changeable , unordered collection of unique key-value pairs. 
+#fast because they use hashing, allow us to access avalue quickly.
 
+capitals = {"India":"Delhi", "China":"Beijing","UK":"London","Russia":"Moscow"}
 
-d1= {"mango":35 ,"muskmellon":89 , "papaya":78 ,"blueberry":90}
-print(d1)
+#print(capitals["Russia"])
+#print(capitals.get("Germany"))
+#print(capitals.keys())
+#print(capitals.values())
+#print(capitals.items())
 
-print(d1.keys())
+#capitals.update({"Germany":"Berlin"})
+#print(capitals.items())
 
-print(d1.values())
+#capitals.pop("India")
+#capitals.clear()
 
-print(d1["papaya"])
-
-d1["blueberry"] = 200
-print(d1)
+for key,value in capitals.items():
+    print(key,value)

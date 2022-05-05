@@ -1,17 +1,13 @@
-#Tuple : Built In Data Type. Hetrogeneous data types are stored (int, string,boolean, float etc.) . It is  immutable which means 
-#we can't add, remove or modify the data inside it.
+#tuple : collection which is ordered and unchangeable.
+#used to group together elated data.
 
-tup1 = (1,"a",True,"b",12.10)
-print(tup1)
+student = ("Bro",21,"Male")
 
+print(student.count("Bro"))
+print(student.index("Male"))
 
+for x in student:
+    print(x)
 
-#accessing individual elements from this tuple.
-
-print(tup1[4])
-print(tup1[-1])
-print(tup1[1:4])
-
-tup1[5] = "Teetee"
-
-tup1[0] = "tettee"
+if "Bro" in student:
+    print("Hello Brother!!")
